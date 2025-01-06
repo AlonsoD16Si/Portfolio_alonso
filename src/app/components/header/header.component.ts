@@ -42,7 +42,7 @@ export class HeaderComponent {
     this.items = [
       { label: 'Work' },
       { label: 'About' },
-      { icon: 'pi pi-file-o', url:'' },
+      { icon: 'pi pi-file-o', url: 'https://alonsodev.netlify.app/ALONSODANIELOCV.pdf'},
       { icon: 'pi pi-linkedin',url:'' },
       { icon: 'pi pi-instagram' ,url:''},
       { icon: 'pi pi-discord',url:'' },

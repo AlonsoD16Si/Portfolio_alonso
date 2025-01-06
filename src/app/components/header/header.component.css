@@ -1,0 +1,136 @@
+.typing-effect-container {
+  display: inline-block;  
+  overflow: hidden;      
+  white-space: nowrap;    
+}
+
+
+.typing-effect {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  animation: typing 3s steps(6) 1s forwards, blink 0.75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.light-text {
+  color: black; 
+}
+
+.dark-text {
+  color: white;
+}
+
+
+.ml-3 {
+  margin-left: 1rem;
+}
+
+.theme-toggle-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.6rem;
+}
+/* Estilo del header dinámico */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  /* max-width: 1168px; */
+
+  /* Tema claro */
+  &.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  /* Tema oscuro */
+  &.dark-theme {
+    /* background-color: #000000; */
+    color: #f9f9f9;
+  }
+
+  .left-menu {
+    display: flex;
+    gap: 30px;
+
+    .menu-item {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: inherit;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  .icon-menu {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: inherit;
+      font-size:x-large ;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .theme-toggle-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+
+      &.light-button {
+        color: #000000;
+      }
+
+      &.dark-button {
+        color: #f9f9f9;
+      }
+    }
+  }
+
+  .typing-effect-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

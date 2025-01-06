@@ -1,0 +1,27 @@
+<div class="header-container" [ngClass]="{'light-theme': isLightTheme, 'dark-theme': !isLightTheme}">
+ 
+  <div class="left-menu">
+    <a href="#" class="menu-item">Work</a>
+    <a href="#" class="menu-item">About</a>
+  </div>
+
+  
+  <div class="icon-menu">
+    <a *ngFor="let item of items" [href]="item.url || '#'" target="_blank" rel="noopener noreferrer">
+      <i [class]="item.icon"></i>
+    </a>
+  </div>
+
+ 
+  <div class="right-menu">
+    <span class="typing-effect-container" [ngClass]="{'light-text': isLightTheme, 'dark-text': !isLightTheme}">
+      <span class="typing-effect">Alonso</span>
+    </span>
+    <button 
+      class="theme-toggle-button" 
+      (click)="toggleTheme()"
+      [ngClass]="{'light-button': isLightTheme, 'dark-button': !isLightTheme}">
+      <i [class]="isLightTheme ? 'pi pi-sun' : 'pi pi-moon'"></i>
+    </button>
+  </div>
+</div>

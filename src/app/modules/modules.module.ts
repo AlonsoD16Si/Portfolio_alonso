@@ -6,7 +6,7 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importación necesaria
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ImageModule } from 'primeng/image';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
     HttpClientModule,
     BrowserAnimationsModule,
     BrowserModule,
+    ImageModule
   ],
   exports: [
     WorkComponent,

@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importación necesaria
 import { BrowserModule } from '@angular/platform-browser';
 import { ImageModule } from 'primeng/image';
+import { TableModule } from 'primeng/table';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ImageModule } from 'primeng/image';
     HttpClientModule,
     BrowserAnimationsModule,
     BrowserModule,
-    ImageModule
+    ImageModule,
+    TableModule,
+    CarouselModule
   ],
   exports: [
     WorkComponent,

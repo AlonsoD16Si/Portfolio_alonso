@@ -11,18 +11,60 @@
     <h1 pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" class="n-alo">Alonso Daniel LS.</h1>
     <div class="h-30rem"></div>
     <h1 pAnimateOnScroll enterClass="fadeinleft" leaveClass="fadeoutleft">Software developer</h1>
-    <div class="al-wo">
-        <div class="h-20rem"></div>
-        <h2 pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" class="w-alo">Work Experience</h2>
+    <div class="c-ex" pAnimateOnScroll enterClass="fadeinleft" leaveClass="fadeoutleft">
+        <div class="al-wo">
+            <div class="h-20rem"></div>
+            <h2 class="w-alo">Work Experience</h2>
+        </div>
+        <div class="section">
+            <div class="h-30rem"></div>
+
+            <h1 class="title">
+                Bandana Products <span class="arrow">&nbsp;→&nbsp;</span>
+            </h1>
+            <p class="subtitle">An automation and bot tool scraping platform for the online marketplaces.</p>
+            <div class="image-container">
+                <img src="../../../assets/imgs/logo-bandana.png" alt="Bandana Logo">
+            </div>
+        </div>
     </div>
-<div class="al-ex-wo">
-    <!-- Experiencia 1 -->
-    <div class="h-30rem"></div>
-    <h2 pAnimateOnScroll enterClass="zoomin" leaveClass="fadeout" class="ex-1">Bandana Products</h2>
-    <span class="di-ex"> &nbsp;→&nbsp;</span>
-    <div class="image-container">
-        <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg" alt="Image" width="250" class="im-ex"></p-image>
+    <div pAnimateOnScroll enterClass="fadeinright" leaveClass="fadeoutright" class="c-ex">
+        <div class="section">
+            <div class="h-30rem"></div>
+
+            <h1 class="title">
+                ITSmartS <span class="arrow">&nbsp;→&nbsp;</span>
+            </h1>
+            <p class="subtitle">Design and development of a scalable software suite .</p>
+            <div class="image-container">
+                <img src="../../../assets/imgs/itsmarts_logo.png" alt="ITSmartS Logo">
+            </div>
+        </div>
     </div>
-</div>
+    <div class="c-ex" pAnimateOnScroll enterClass="fadeinleft" leaveClass="fadeoutleft">
+        <div class="skills">
+            <div class="h-30rem"></div>
+            <h1 class="title">Skills</h1>
+            <p-table [value]="skills" [responsiveLayout]="'scroll'" class="custom-table">
+                <ng-template pTemplate="body" let-skill>
+                    <tr>
+                        <td>{{ skill.name }}</td>
+                        <td>
+                            <p-carousel [value]="skill.languages" [numVisible]="3" [numScroll]="1" [circular]="true"
+                                [showNavigators]="false" [showIndicators]="false" [autoplayInterval]="3000"
+                                class="custom-carousel">
+                                <ng-template pTemplate="item" let-language>
+                                    <div class="carousel-item">
+                                        <img [src]="language.img" [alt]="language.name" class="logo-image" />
+                                    </div>
+                                </ng-template>
+                            </p-carousel>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+
+    </div>
 
 </div>

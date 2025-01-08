@@ -45,11 +45,11 @@
                 "inject": false,
                 "bundleName": "theme-light"
               },
-            
               "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+                        ]
           },
           "configurations": {
             "production": {

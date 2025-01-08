@@ -9,11 +9,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ImageModule } from 'primeng/image';
 import { TableModule } from 'primeng/table';
 import { CarouselModule } from 'primeng/carousel';
+import { BandanaComponent } from './bandana/bandana.component';
+import { ItsmartsComponent } from './itsmarts/itsmarts.component';
 
 @NgModule({
   declarations: [
     WorkComponent,
-    AboutComponent
+    AboutComponent,
+    BandanaComponent,
+    ItsmartsComponent
   ],
   imports: [
     CommonModule,

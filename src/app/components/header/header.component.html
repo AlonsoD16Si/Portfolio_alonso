@@ -1,8 +1,14 @@
 <div class="header-container" [ngClass]="{'light-theme': isLightTheme, 'dark-theme': !isLightTheme}">
  
   <div class="left-menu">
-    <a href="#" class="menu-item">Work</a>
-    <a href="#" class="menu-item">About</a>
+    <a mat-list-item *ngFor="let item of menuItems()"
+    [routerLink]="item.route"
+    routerLinkActive="selec-menu-item"
+    #rl="routerLinkActive"
+    [class.selected-menu-item]="rl.isActive"
+    class="menu-item">
+  <span class="menu-item-text">{{item.label}}</span>
+  </a>
   </div>
 
   

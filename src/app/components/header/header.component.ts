@@ -1,5 +1,10 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, Renderer2, signal } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+
+export type HeaderDirection = {
+  label:string;
+  route?:string;
+}
 
 @Component({
   selector: 'app-header',
@@ -40,8 +45,7 @@ export class HeaderComponent {
     this.setTheme(this.isLightTheme ? 'theme-light' : 'theme-dark');
 
     this.items = [
-      { label: 'Work' },
-      { label: 'About' },
+     
       { icon: 'pi pi-file-o', url: 'https://alonsodev.netlify.app/ALONSODANIELOCV.pdf'},
       { icon: 'pi pi-linkedin',url:'https://www.linkedin.com/in/alonso-daniel-l%C3%B3pez-silva/' },
       { icon: 'pi pi-instagram' ,url:'https://www.instagram.com/alonso_dani20/'},
@@ -49,5 +53,18 @@ export class HeaderComponent {
    
     ];
   }
+
+  menuItems = signal<HeaderDirection[]>([
+    {
+      label:'Work',
+      route: '/Work'
+      
+    },
+    {
+      label: 'About',
+      route: '/About'
+    },
+    
+  ]);
 
 }

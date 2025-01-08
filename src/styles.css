@@ -4,6 +4,7 @@
 
 :root{
     --text20: #333333;
+    --text16: #000000;
     --text10: #666666;
     --text8: #999999;
     --text6: #cccccc;
@@ -15,4 +16,5 @@
     --font-family-apple: 'Roboto', sans-serif;
     --background-color1: rgba(0, 0, 0, 0.06);
     --background-color2: rgba(200, 199, 199, 0.822);
+    --background-color3: rgba(0, 0, 0, 0.1)
 }

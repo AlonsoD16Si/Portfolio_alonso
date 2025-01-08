@@ -50,3 +50,20 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+.emoji {
+    position: absolute;
+    font-size: 3rem;
+    animation: fly 3s ease-out forwards;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh) translateX(50vw);
+      opacity: 0;
+    }
+  }
+  

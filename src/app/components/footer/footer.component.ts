@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  emojiVisible: boolean = false;
 
+  showEmoji() {
+    this.emojiVisible = true;
+
+   
+    setTimeout(() => {
+      this.emojiVisible = false;
+    }, 3000); 
+  }
 }

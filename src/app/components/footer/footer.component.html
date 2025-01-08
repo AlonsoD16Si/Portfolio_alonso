@@ -13,8 +13,9 @@
         </div>
 
         <p class="footer-credits">
-            Designed and coded by <span class="author">Alonso Daniel</span>
+            Designed and coded by <span class="author" (click)="showEmoji()">Alonso Daniel</span>
         </p>
+        <div class="emoji" *ngIf="emojiVisible">🦁</div>
 
         <p class="copyright">© Alonso Daniel 2024</p>
     </div>

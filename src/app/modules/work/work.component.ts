@@ -19,8 +19,8 @@ export class WorkComponent {
         { name: 'React', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
         { name: 'Angular', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
         { name: 'Responsive Design', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
-        { name: 'Angular Material', img: 'https://material.angular.io/assets/img/angular-material-logo.svg' },
-        { name: 'PrimeNG', img: 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png' },
+        { name: 'Angular Material', img: 'https://image.pngaaa.com/160/4144160-middle.png' },
+        { name: 'PrimeNG', img: 'https://i0.wp.com/www.primefaces.org/wp-content/uploads/2018/05/primeng-logo.png?ssl=1' },
         { name: 'Bootstrap', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
       ],
     },
@@ -40,7 +40,7 @@ export class WorkComponent {
     {
       name: 'Cloud',
       languages: [
-        { name: 'AWS (CloudFront)', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg' }
+        { name: 'AWS (CloudFront)', img: 'https://cdn.worldvectorlogo.com/logos/amazon-web-services.svg' }
       ],
     },
     {

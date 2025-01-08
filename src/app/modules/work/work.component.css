@@ -126,10 +126,10 @@ h2 {
   margin-left: 30px;
 }
 .al-wo {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: left; */
-  /* gap: 10px;  */
+  display: flex; 
+  align-items: center; 
+  justify-content: left; 
+  gap: 10px;  
   font-family: var(--font-family2);
   font-size: 16px;
   margin-left: 30px;
@@ -184,7 +184,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-left: 60px;
-  width: 1168px;
+  width: 1000px;
   height: 400px;
   transition: background-color 0.5s ease;
 }
@@ -214,22 +214,24 @@ image-container:hover img {
 
 /* Tabla personalizada */
 .custom-table {
-  width: 1168px;
+  width: 1050px;
   height: 400px;
-    border-collapse: collapse;
+  border-collapse: collapse;
   margin-left: 60px;
   font-size: 18px;
   text-align: left;
   display: flex;
-
+  background-color: transparent !important;
+  border: none;
 }
 
 .custom-table td {
-  color: var(--text20);
+  /* color: var(--text20); */
   font-family: var(--font-family2);
   font-size: 20px;
   overflow: hidden;
-
+  background-color: transparent !important;
+  border: none;
 }
 
 .custom-carousel {
@@ -237,28 +239,28 @@ image-container:hover img {
 }
 ::ng-deep .custom-carousel {
   .p-carousel {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
-  
+
   .p-carousel-content {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
-  
+
   .p-carousel-container {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
 
   .p-carousel-items-container {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
 
   /* Añade estas nuevas reglas */
   .p-carousel-items-content {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
 
   .p-carousel-items {
-      overflow: hidden !important;
+    overflow: hidden !important;
   }
 }
 .carousel-item {
@@ -266,11 +268,12 @@ image-container:hover img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
+  background-color: transparent !important;
 }
 
 .logo-image {
-  width: 80px;
+  width: 70px;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -280,7 +283,81 @@ image-container:hover img {
   transform: scale(1.1);
 }
 
-p-table{
+p-table {
   overflow: hidden;
+}
+
+::ng-deep .p-datatable {
+  background-color: transparent !important;
+}
+
+::ng-deep .p-datatable-tbody > tr {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+  .al-he {
+    padding: 2rem 1rem;
+  }
+
+  h1, h2 {
+    font-size: 8vw;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  .subtitle {
+    font-size: 4vw;
+  }
+
+  .image-container img {
+    width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  }
+
+  .custom-table td {
+    font-size: 16px;
+  }
+
+  .carousel-item {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 3.5vw;
+  }
+
+  h1, h2 {
+    font-size: 12vw;
+  }
+
+  .di-rt {
+    font-size: 1.5rem;
+  }
+
+  .custom-table td {
+    font-size: 14px;
+  }
+
+  .location, .clock {
+    font-size: 1rem;
+  }
+}
+
+.t-ex{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 35px;
+  font-family: var(--font-family2);
 }
 

@@ -46,7 +46,7 @@ export class HeaderComponent {
 
     this.items = [
      
-      { icon: 'pi pi-file-o', url: 'https://alonsodev.netlify.app/ALONSODANIELOCV.pdf'},
+      { icon: 'pi pi-file-o', url: 'assets/documents/ALONSODANIELOCV.pdf'},
       { icon: 'pi pi-linkedin',url:'https://www.linkedin.com/in/alonso-daniel-l%C3%B3pez-silva/' },
       { icon: 'pi pi-instagram' ,url:'https://www.instagram.com/alonso_dani20/'},
       { icon: 'pi pi-github',url:'https://github.com/AlonsoD16Si' },

@@ -110,6 +110,7 @@ h1 {
   width: 400px;
   border-radius: 15px;
   object-fit: cover;
+  height: 600px;
 }
 
 @media (max-width: 768px) {
